@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link  href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Pig Dice</title>
 </head>
 <body>
-  
+  <form id="p1-submit-roll">
+    <div class="content">
+      <h1>Let's Play Some Pig Dice Yo!!!!!</h1>
+      <br>
+      <h4>The Rules: Press Roll to roll the dice. Roll adds to Roll Total.</h4> 
+      <h4>As long as the roll isn't 1, you can keep rolling.</h4> 
+      <h4>If you select Hold all points will add to Total.</h4> 
+      <h4>First Player to 100 points wins! May the luckiest player Win!!</h4>
+    <br>
+    <div id="player1">
+      <h2 id="p1-style">PLAYER 1</h2>
+      <span id="player1Total"><strong>PLAYER 1 TOTAL POINTS:</strong></span>
+      <br>
+      <span id="player1Roll"><strong>PLAYER 1 CURRENT POINTS:</strong></span>
+      <br>
+      <p><img src="img/dice1.png" alt="a picture of dice" width="300" id="rollP1"></p>
+      <br>
+      <div>
+        <button type="submit" id="p1Roll">PLAYER 1 ROLL</button>
+      </div>
+    </div>
+    </form>
+    <form id="p2-submit-roll"></form>
+    <div id="player2">
+      <h2 id="p2-style">PLAYER 2</h2>
+      <span id="player2Total"><strong>PLAYER 2 TOTAL POINTS:</strong></span>
+      <br>
+      <span id="player2Roll"><strong>PLAYER 1 CURRENT POINTS:</strong></span>
+      <br>
+      <p><img src="img/dice1.png" alt="a picture of dice" width="300" id="rollP2"></p>
+      <br>
+      <div>
+        <button type="submit" id="p2Roll">PLAYER 2 ROLL</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <form id="player1-hold">
+      <br>
+      <div>
+        <button type="submit" id="p1Hold">PLAYER 1 HOLD</button>
+      <br>
+      </div>
+    </form>
+  </form>
+  <form id="player2-hold">
+    <br>
+    <div>
+      <button type="submit" id="p2Hold">PLAYER 2 HOLD</button>
+    </div>   
+  </form>
 </body>
 </html>

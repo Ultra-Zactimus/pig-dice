@@ -1,0 +1,79 @@
+#player1 {
+  float: left;
+  box-sizing: content-box;
+  width: 25%;
+  border: solid red 10px;
+  padding: 5px;
+}
+
+#p1Hold {
+  float: left;
+}
+
+#p2Hold {
+  float: right;
+}
+
+#player2 {
+ float: right;
+ box-sizing: content-box;
+ width: 25%;
+ border: solid blue 10px;
+ padding: 5px;
+ 
+}
+
+.content {
+ text-align: center;
+}
+
+body {
+  background: url(https://i.ytimg.com/vi/lKNMuFg26WY/maxresdefault.jpg);
+  background-size: cover;
+  
+}
+
+h4 {
+color: black;
+background-color: grey;
+margin: auto;
+border-radius: 20px;
+width: 35%;
+}
+
+h1 {
+font-weight: bolder;
+color: black;
+background-color: grey;
+margin: auto;
+border-radius: 20px;
+width: 35%;
+text-align: center;
+}
+
+#p1-style {
+  color:black;
+  background-color: red;
+}
+
+#p2-style{
+  color: black;
+  background-color: blue;
+}
+
+#player2Total {
+  background-color: blue;
+  color: black;
+}
+#player2Roll {
+  background-color: blue;
+  color: black;
+}
+#player1Total {
+  background-color: red;
+  color: black;
+}
+#player1Roll {
+  background-color: red;
+  color: black;
+}
