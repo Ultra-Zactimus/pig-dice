@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <link  href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Pig Dice</title>
-</head>
-<body>
-  <form id="p1-submit-roll">
-    <div class="content">
-      <h1>Let's Play Some Pig Dice Yo!!!!!</h1>
-      <br>
-      <h4>The Rules: Press Roll to roll the dice. Roll adds to Roll Total.</h4> 
-      <h4>As long as the roll isn't 1, you can keep rolling.</h4> 
-      <h4>If you select Hold all points will add to Total.</h4> 
-      <h4>First Player to 100 points wins! May the luckiest player Win!!</h4>
-    <br>
-    <div id="player1">
-      <h2 id="p1-style">PLAYER 1</h2>
-      <span id="player1Total"><strong>PLAYER 1 TOTAL POINTS:</strong></span>
-      <br>
-      <span id="player1Roll"><strong>PLAYER 1 CURRENT POINTS:</strong></span>
-      <br>
-      <p><img src="img/dice1.png" alt="a picture of dice" width="300" id="rollP1"></p>
-      <br>
-      <div>
-        <button type="submit" id="p1Roll">PLAYER 1 ROLL</button>
-      </div>
-    </div>
+
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Porcus Dice</title>
+  </head>
+
+  <body>
+    <form id="p1-submit-roll">
+      <div class="content">
+        <div id="scroll">
+        <h1>Playeth thy odds 'gainst the wizard in a game of Porcus Dice</h1>
+        <br>
+        <h4>Thy rules: presseth rolleth to rolleth the dice.  Rolleth adds to rolleth points total</h4>
+        <h4>At which hour thee rolleth a one thee loseth thy turneth and current points</h4>
+        <h4>If 't be true thee selecteth holdeth all points shall addeth to total</h4>
+        <h4>First playeth'r to 100 points wins! may the luckiest playeth'r winneth!!</h4>
+        <br>
+        </div>
+        <div id="player1">
+          <h2 id="p1-style">PLAYER 1</h2>
+            <div id="p1TandC">
+              <p><strong>PLAYER 1 TOTAL POINTS:</strong><span id="player1Total"></span>
+              <br>
+              <p><strong>PLAYER 1 CURRENT POINTS:</strong> <span id="player1Points"></span></p> 
+              <p><strong>PLAYER 1 ROLL:</strong> <span id="player1Roll"></span></p>
+              <p><img src="img/dice1.jfif" alt="a picture of dice" width="300" id="rollP1"></p>
+              <br>
+            <button type="submit" id="p1Roll">PLAYER 1 ROLL</button>
+            <button type="submit" id="p1Hold" class="player1-hold">PLAYER 1 HOLD</button>
+          </div>
+        </div>
     </form>
     <form id="p2-submit-roll"></form>
     <div id="player2">
       <h2 id="p2-style">PLAYER 2</h2>
-      <span id="player2Total"><strong>PLAYER 2 TOTAL POINTS:</strong></span>
-      <br>
-      <span id="player2Roll"><strong>PLAYER 1 CURRENT POINTS:</strong></span>
-      <br>
-      <p><img src="img/dice1.png" alt="a picture of dice" width="300" id="rollP2"></p>
-      <br>
-      <div>
+        <div id="p2TandC">
+          <p><strong>PLAYER 2 TOTAL POINTS:</strong><span id="player2Total"></span>
+          <br>
+          <p><strong>PLAYER 2 CURRENT POINTS:</strong> <span id="player2Points"></span></p> 
+          <p><strong>PLAYER 2 ROLL:</strong> <span id="player2Roll"></span></p>
+          <p><img src="img/dice1.jfif" alt="a picture of dice" width="300" id="rollP2"></p>
+          <br>
         <button type="submit" id="p2Roll">PLAYER 2 ROLL</button>
-      </div>
+        <button type="submit" id="p2Hold" class="player2-hold">PLAYER 2 HOLD</button>
       </div>
     </div>
-  </div>
-  <form id="player1-hold">
-      <br>
-      <div>
-        <button type="submit" id="p1Hold">PLAYER 1 HOLD</button>
-      <br>
-      </div>
+    </div>
+    </div>
     </form>
-  </form>
-  <form id="player2-hold">
-    <br>
-    <div>
-      <button type="submit" id="p2Hold">PLAYER 2 HOLD</button>
-    </div>   
-  </form>
-</body>
+    <div id="player1wins">
+      <h1>PLAYER 1 WINS!!</h1>
+      <h3>Taketh thy prize!</h3>
+      <img src="img/playerwins.gif" id="p1winning" alt="link gets a rupee" class="show-game">
+    </div> 
+    <div id="player2wins">
+      <h1>PLAYER 2 WINS!!</h1>
+      <h3>Taketh thy prize!</h3>
+      <img src="img/playerwins.gif" id="p2winning" alt="link gets a rupee" class="show-game">
+    </div> 
+    </div> 
+  </body>
+
 </html>

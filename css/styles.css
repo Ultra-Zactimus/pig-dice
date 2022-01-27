@@ -6,13 +6,17 @@
   padding: 5px;
 }
 
-#p1Hold {
-  float: left;
-}
+/* #p1Hold {
+  position: absolute;
+  left: 100px;
+  top: 700px;
+} */
 
-#p2Hold {
-  float: right;
-}
+/* #p2Hold {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+} */
 
 #player2 {
  float: right;
@@ -28,27 +32,28 @@
 }
 
 body {
-  background: url(https://i.ytimg.com/vi/lKNMuFg26WY/maxresdefault.jpg);
+  background-image: url('../img/pig-dice-background.png');
   background-size: cover;
+  background-repeat: no-repeat, repeat;
   
 }
 
 h4 {
-color: black;
-background-color: grey;
+color: wheat;
 margin: auto;
 border-radius: 20px;
 width: 35%;
+font-family: 'fantasy';
 }
 
 h1 {
 font-weight: bolder;
-color: black;
-background-color: grey;
+color: wheat;
 margin: auto;
 border-radius: 20px;
-width: 35%;
+width: 100%;
 text-align: center;
+font-family: 'fantasy';
 }
 
 #p1-style {
@@ -62,18 +67,56 @@ text-align: center;
 }
 
 #player2Total {
-  background-color: blue;
-  color: black;
+  color: white;
 }
 #player2Roll {
-  background-color: blue;
-  color: black;
+  color: white
 }
 #player1Total {
-  background-color: red;
-  color: black;
+  color: white
 }
 #player1Roll {
-  background-color: red;
-  color: black;
+  color: white;
 }
+
+#p2TandC {
+  color: white;
+  font-weight: bold;
+}
+
+#p1TandC {
+  color: white;
+  font-weight: bold;
+}
+
+#player1wins {
+  display: none;
+  float: center;
+}
+
+#player2wins {
+  display: none;
+  float: center;
+}
+
+#p1winning {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#p2winning {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  text-align: center;
+  color: wheat;
+}
+
+
+/* button {
+  background-image: url('../img/SCROLL.jpg');
+} */
